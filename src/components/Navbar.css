@@ -13,15 +13,12 @@
 .navbar-brand {
 	font-size: 1.8rem;
 	font-weight: 700;
-	color: white;
+	color: #f39c12;
 	text-decoration: none;
 	letter-spacing: 1px;
 	transition: all 0.3s ease;
 }
 
-.navbar-brand:hover {
-	color: #f39c12;
-}
 
 .nav-list {
 	display: flex;

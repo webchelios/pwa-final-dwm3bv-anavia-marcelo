@@ -35,7 +35,7 @@ export const ProductModal = (product) => {
 	const eraseButton = document.createElement('button');
 	eraseButton.addEventListener('click', async (e) => {
 		const response = await fetch(
-			`http://localhost/web/dacnenawia-api/index.php/${product.getId}`,
+			`http://localhost/dacnenawia-api/index.php/${product.getId}`,
 			{
 				method: 'DELETE',
 			},

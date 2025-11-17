@@ -46,7 +46,7 @@ export const Admin = () => {
 
 	const imagesLabel = document.createElement('label');
 	imagesLabel.htmlFor = 'images';
-	imagesLabel.innerHTML = 'Imagen <span class="required-label">*</span>';
+	imagesLabel.innerHTML = 'Imagen (URL) <span class="required-label">*</span>';
 
 	const images = document.createElement('input');
 	images.name = 'images';
@@ -140,7 +140,7 @@ export const Admin = () => {
 		};
 
 		try {
-			const response = await fetch('http://localhost/web/dacnenawia-api/', {
+			const response = await fetch('http://localhost/dacnenawia-api/', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',

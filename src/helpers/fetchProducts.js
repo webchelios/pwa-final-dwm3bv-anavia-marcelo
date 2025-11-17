@@ -1,5 +1,5 @@
 export const fetchProducts = async () => {
-	const response = await fetch('http://localhost/web/dacnenawia-api/', {
+	const response = await fetch('http://localhost/dacnenawia-api/', {
 		method: 'GET',
 		headers: {
 			'Content-Type': 'application/json',

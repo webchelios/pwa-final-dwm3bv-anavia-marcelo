@@ -47,7 +47,7 @@ export const Store = async () => {
                 <h3>${product.getName}</h3>
                 <p>${product.getCategory}</p>
                 <div class="store-product-img">
-                    <img src="/${product.getImages}" alt="Imagen de ${product.getName}">
+                    <img src="${product.getImages}" alt="Imagen de ${product.getName}">
                 </div>
                 <p>${product.getDescription}</p>
                 <p class="store-price">$${product.getPrice}</p>
