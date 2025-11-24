@@ -1,5 +1,6 @@
 # dacnenawia-tienda
-Alojar la api de PHP en un webserver
+Alojar la api de PHP que se encuentra en el directorio BACKEND en un webserver
+Cargar el archivo sql en phpmyadmin o similar
 
 ## Instalar proyecto
 ```
