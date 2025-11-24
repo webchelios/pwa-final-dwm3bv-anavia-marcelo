@@ -62,7 +62,7 @@
 
 .store-product-img {
 	width: 100%;
-	height: 200px;
+	height: auto;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	overflow: hidden;
@@ -76,9 +76,6 @@
 	transition: transform 0.5s ease;
 }
 
-.store-product-card:hover .store-product-img img {
-	transform: scale(1.05);
-}
 
 .store-product-card h3 {
 	font-size: 1.3rem;
@@ -163,6 +160,7 @@
 		opacity: 0;
 		transform: translateY(20px);
 	}
+
 	to {
 		opacity: 1;
 		transform: translateY(0);

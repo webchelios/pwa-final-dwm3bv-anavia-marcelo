@@ -1,3 +1,5 @@
+import { getItem } from "../localstorage/localstorage";
+
 const isInstalled = localStorage.getItem('installed') === 'true';
 let installEvent = null;
 
@@ -7,12 +9,21 @@ export const pwaStore = {
 	},
 
 	init() {
-		//si la app se instala, guardo ese dato en el localstorage para eliminar el boton de instalación
+		//si la app se instala, guardo ese dato en el localstorage para eliminar el boton de instalación (en la app)
 		window.addEventListener('appinstalled', () => {
 			const installBtn = document.querySelector('.install-btn');
 			installBtn.style.display = 'none';
 			localStorage.setItem('installed', true);
 		});
+
+		//elimino el boton de instalar en la web (si en localstorage está instalado)
+		if (localStorage.getItem('installed') === 'true') {
+			document.addEventListener('DOMContentLoaded', () => {
+				const installBtn = document.querySelector('.install-btn');
+				installBtn.style.display = 'none';
+			})
+
+		}
 
 		window.addEventListener('beforeinstallprompt', (event) => {
 			event.preventDefault();
